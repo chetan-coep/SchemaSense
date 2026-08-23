@@ -1,35 +1,11 @@
+﻿# Python
 __pycache__/
 *.py[cod]
-*.class
-.env
-.venv/
-venv/
-ENV/
-env/
-build/
-Dist/
-*.egg-info/
-*.egg
-*.log
-*.sqlite3
-.DS_Store
-.idea/
-*.iml
 *.pyo
 *.pyd
-*.sqlite3
-# Jupyter Notebook
-.ipynb_checkpoints/
-# VS Code
-.vscode/
-# Pytest cache
-.pytest_cache/
-# mypy
-.mypy_cache/
-# coverage
-htmlcov/
-.coverage
-.coverage.*
-
-# ignore virtual environment
+*.egg-info/
+*.env
+*.venv
+ENV/
+env/
 venv/
