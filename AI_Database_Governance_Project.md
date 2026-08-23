@@ -25,29 +25,29 @@ This is not an attempt to build a general-purpose LLM. It is a narrow, grounded 
 
 ```
                      ┌─────────────────────────┐
-                     │      Frontend (UI)       │
-                     │  React / Streamlit       │
-                     │  - NL query box           │
-                     │  - Schema docs browser     │
-                     │  - Audit dashboard          │
-                     └───────────┬──────────────┘
+                     │      Frontend (UI)      │
+                     │  React / Streamlit      │
+                     │  - NL query box         │
+                     │  - Schema docs browser  │
+                     │  - Audit dashboard      │
+                     └───────────┬─────────────┘
                                  │
-                     ┌───────────▼──────────────┐
+                     ┌───────────▼───────────────┐
                      │   Application Backend     │
                      │   (Python / FastAPI)      │
-                     │  - Auth & RBAC             │
-                     │  - Query orchestration      │
-                     │  - Validation & sandboxing   │
-                     └───────────┬──────────────┘
+                     │  - Auth & RBAC            │
+                     │  - Query orchestration    │
+                     │  - Validation & sandboxing│
+                     └───────────┬───────────────┘
                     ┌────────────┼─────────────┐
                     ▼            ▼             ▼
           ┌──────────────┐ ┌──────────┐ ┌──────────────┐
-          │  LLM Layer    │ │ Metadata │ │ Target DB     │
-          │ (schema-      │ │ Store     │ │ (Postgres —   │
-          │ grounded      │ │ (schema   │ │ the DB being   │
-          │ NL→SQL)       │ │ catalog,  │ │ documented/    │
-          │               │ │ logs,     │ │ queried)       │
-          │               │ │ users)    │ │                │
+          │  LLM Layer   │ │ Metadata │ │ Target DB    │
+          │ (schema-     │ │ Store    │ │ (Postgres —  │
+          │ grounded     │ │ (schema  │ │ the DB being │
+          │ NL→SQL)      │ │ catalog, │ │ documented/  │
+          │              │ │ logs,    │ │ queried)     │
+          │              │ │ users)   │ │              │
           └──────────────┘ └──────────┘ └──────────────┘
 ```
 
